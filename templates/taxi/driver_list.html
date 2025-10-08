@@ -12,7 +12,7 @@
       {% for driver in driver_list %}
         <tr>
           <td>{{ driver.id }}</td>
-          <td class="col-sm-3"><a href="{{ driver.get_absolute_url }}">{{ driver.username }}</a></td>
+          <td class="col-sm-3"><a href="{% url 'taxi:driver-detail' driver.pk %}">{{ driver.username }}</a></td>
           <td class="col-sm-3">{{ driver.license_number }}</td>
         </tr>
       {% endfor %}
