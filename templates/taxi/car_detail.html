@@ -25,7 +25,9 @@
             <td class="col-sm-3">{{ driver.username }}</td>
           </tr>
         {% empty %}
-          <p>No cars!</p>
+          <tr>
+            <td colspan="4">No drivers!</td>
+          </tr>
         {% endfor %}
       </table>
     <hr>

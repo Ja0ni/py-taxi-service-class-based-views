@@ -21,7 +21,9 @@
             <td class="col-sm-3">{{ car.manufacturer.name }}</td>
           </tr>
         {% empty %}
-          <p>No cars!</p>
+          <tr>
+            <td colspan="4">No cars!</td>
+          </tr>
         {% endfor %}
       </table>
     <hr>
